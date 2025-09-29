@@ -1,118 +1,152 @@
 <!DOCTYPE html>
-<html lang="en">
-  <head>
+<html lang="it">
+<head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Portfolio - Full Stack Developer</title>
     <link rel="stylesheet" href="./src/style.css" />
-  </head>
-  <body>
-    <header class="navbar container">
-      <img src="https://placehold.co/100x60" alt="Logo" />
-      <nav>
-        <ul class="navbar-links">
-          <li>Home</li>
-          <li>Blog</li>
-          <li>Chi sono</li>
-        </ul>
-      </nav>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Navbar -->
+    <header class="navbar sticky top-0 z-50 border-b border-gray-200">
+        <div class="container mx-auto px-6 py-4 flex justify-between items-center">
+            <div class="flex items-center gap-3">
+                <img src="https://placehold.co/40x40/3b82f6/ffffff?text=<>" alt="Logo" class="rounded-lg" />
+                <span class="text-xl font-bold text-gray-900">Portfolio</span>
+            </div>
+            <nav class="hidden md:flex gap-8">
+                <a href="#home" class="text-gray-700 hover:text-blue-600 transition-colors">Home</a>
+                <a href="#services" class="text-gray-700 hover:text-blue-600 transition-colors">Blog</a>
+                <a href="#contact" class="text-gray-700 hover:text-blue-600 transition-colors">Chi sono</a>
+            </nav>
+        </div>
     </header>
-    <main>
-      <section class="hero container">
-        <div>
-          <div>
-            <h1 class="text-display">Sono un Full Stack</h1>
-            <p>Il migliore sulla piazza</p>
-          </div>
-          <div>
-            <button class="btn btn-primary">Prenota una call</button>
-            <button class="btn btn-secondary">Vedi portfolio</button>
-          </div>
+
+    <!-- Hero -->
+    <section id="home" class="hero flex items-center">
+        <div class="container mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+            <div>
+                <h1 class="text-display mb-6">
+                    <span class="text-gradient">Sono un</span><br>
+                    <span class="text-gray-900">Full Stack</span>
+                </h1>
+                <p class="text-xl text-gray-600 mb-8 max-w-lg">
+                    Il migliore sulla piazza. Creo esperienze digitali che trasformano le tue idee in realtà.
+                </p>
+                <div class="flex flex-col sm:flex-row gap-4">
+                    <a href="#contact" class="bg-blue-600 text-white px-8 py-3 rounded-xl font-semibold hover:bg-blue-700 transition-all text-center">
+                        Prenota una call
+                    </a>
+                    <a href="#services" class="border-2 border-blue-600 text-blue-600 px-8 py-3 rounded-xl font-semibold hover:bg-blue-600 hover:text-white transition-all text-center">
+                        Vedi portfolio
+                    </a>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <img src="https://placehold.co/500x400/3b82f6/ffffff?text=Developer" alt="Developer" class="rounded-2xl shadow-2xl" />
+            </div>
         </div>
-        <img src="https://placehold.co/600x400" alt="" />
-      </section>
-      <section>
-        <div class="values container">
-          <article class="card">
-            <h2>UI/UX Design</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-              Eligendi, hic temporibus voluptatibus eveniet, deserunt ipsum quod
-              aliquid distinctio beatae pariatur dolorem alias iste est tempora
-              fugiat voluptatem quas commodi qui.
-            </p>
-          </article>
-          <article class="card">
-            <h2>Backend</h2>
-            <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
-              illum dolorem rerum autem, ut voluptate non distinctio accusantium
-              culpa qui fugiat eaque dolor ipsa, tempora omnis minus quos sit?
-              A.
-            </p>
-          </article>
-          <article class="card">
-            <h2>Frontend</h2>
-            <p>
-              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quia,
-              quam ad dolorem inventore tenetur illo nam voluptatum molestias
-              ipsam earum doloribus iure nostrum maxime hic itaque est rem. At,
-              voluptate!
-            </p>
-          </article>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="py-20 bg-white">
+        <div class="container mx-auto px-6 grid md:grid-cols-3 gap-8">
+            <div class="p-8 rounded-xl border hover:-translate-y-1 transition-all bg-gradient-to-br from-blue-50 to-blue-100 border-blue-200">
+                <h2 class="text-2xl font-bold mb-4">UI/UX Design</h2>
+                <p class="text-gray-600">
+                    Progetto interfacce intuitive che mettono l'utente al centro dell'esperienza digitale.
+                </p>
+            </div>
+            <div class="p-8 rounded-xl border hover:-translate-y-1 transition-all bg-gradient-to-br from-purple-50 to-purple-100 border-purple-200">
+                <h2 class="text-2xl font-bold mb-4">Backend</h2>
+                <p class="text-gray-600">
+                    Sviluppo architetture server robuste e scalabili per applicazioni performanti.
+                </p>
+            </div>
+            <div class="p-8 rounded-xl border hover:-translate-y-1 transition-all bg-gradient-to-br from-green-50 to-green-100 border-green-200">
+                <h2 class="text-2xl font-bold mb-4">Frontend</h2>
+                <p class="text-gray-600">
+                    Creo interfacce moderne e responsive con le tecnologie più avanzate.
+                </p>
+            </div>
         </div>
-      </section>
-      <section class="container">
-        <h2>Offriamo soluzioni</h2>
-        <p>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam ea
-          aspernatur eum itaque rerum reprehenderit corporis dicta doloremque
-          repellat unde dolorum laudantium accusamus vero libero quae a,
-          architecto, quibusdam qui.
-        </p>
-        <div class="showroom">
-          <img src="https://placehold.co/200x200" alt="ferrari" />
-          <img src="https://placehold.co/200x200" alt="porsche" />
-          <img src="https://placehold.co/200x200" alt="lambo" />
-          <img src="https://placehold.co/200x200" alt="pagani" />
-          <img src="https://placehold.co/200x200" alt="fiat panda di davide" />
+    </section>
+
+    <!-- Solutions -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold mb-4">Offriamo soluzioni</h2>
+                <p class="text-xl text-gray-600 max-w-2xl mx-auto">
+                    Dalla progettazione all'implementazione, creo soluzioni digitali complete.
+                </p>
+            </div>
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6">
+                <img src="https://placehold.co/200x150/ef4444/ffffff?text=Web" alt="Web Apps" class="rounded-xl hover:scale-105 transition-transform" />
+                <img src="https://placehold.co/200x150/3b82f6/ffffff?text=Mobile" alt="Mobile" class="rounded-xl hover:scale-105 transition-transform" />
+                <img src="https://placehold.co/200x150/f59e0b/ffffff?text=Shop" alt="E-commerce" class="rounded-xl hover:scale-105 transition-transform" />
+                <img src="https://placehold.co/200x150/8b5cf6/ffffff?text=API" alt="APIs" class="rounded-xl hover:scale-105 transition-transform" />
+                <img src="https://placehold.co/200x150/10b981/ffffff?text=Admin" alt="Dashboard" class="rounded-xl hover:scale-105 transition-transform" />
+                <img src="https://placehold.co/200x150/f97316/ffffff?text=CMS" alt="CMS" class="rounded-xl hover:scale-105 transition-transform" />
+            </div>
         </div>
-      </section>
-      <section class="container book-a-call-cta">
-        <img src="https://placehold.co/400x400" alt="" />
-        <div class="book-a-call-cta__text">
-          <h2>Adesso tocca a te</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dicta
-            expedita animi quos quasi dolores? Architecto rerum veritatis quos
-            corrupti minus earum blanditiis facere ducimus laborum beatae.
-            Corrupti consequatur magni a.
-          </p>
-          <button class="btn btn-primary">Prenota una call</button>
+    </section>
+
+    <!-- CTA -->
+    <section class="py-20 bg-gradient-to-r from-blue-600 to-purple-600 text-white">
+        <div class="container mx-auto px-6 grid lg:grid-cols-2 gap-12 items-center">
+            <img src="https://placehold.co/400x300/ffffff/3b82f6?text=Team" alt="Collaborazione" class="rounded-xl" />
+            <div>
+                <h2 class="text-4xl font-bold mb-6">Adesso tocca a te</h2>
+                <p class="text-xl mb-8 opacity-90">
+                    Insieme trasformeremo la tua visione in una realtà digitale di successo.
+                </p>
+                <a href="#contact" class="bg-white text-blue-600 px-8 py-3 rounded-xl font-semibold hover:bg-gray-100 transition-all">
+                    Prenota una call
+                </a>
+            </div>
         </div>
-      </section>
-      <section class="container">
-        <h2>Contattami</h2>
-        <form class="contact-form">
-          <input
-            type="email"
-            name=""
-            id=""
-            placeholder="Inserisci la tua email"
-          />
-          <textarea
-            name=""
-            id=""
-            cols="30"
-            rows="10"
-            placeholder="Ciao Davide ti contatto per l'annuncio Fiat Panda"
-          ></textarea>
-          <div>
-            <button class="btn btn-secondary">Invia</button>
-          </div>
-        </form>
-      </section>
-    </main>
-    <footer class="container">&copy; 2025 | All rights are reserved</footer>
-  </body>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-20 bg-white">
+        <div class="container mx-auto px-6 max-w-2xl">
+            <h2 class="text-4xl font-bold text-center mb-12">Contattami</h2>
+            <form class="space-y-6">
+                <input 
+                    type="email" 
+                    placeholder="Inserisci la tua email"
+                    class="w-full px-6 py-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-600 focus:border-transparent"
+                />
+                <textarea 
+                    rows="6"
+                    placeholder="Ciao! Ti contatto per discutere del mio progetto..."
+                    class="w-full px-6 py-4 border border-gray-300 rounded-xl focus:ring-2 focus:ring-blue-600 focus:border-transparent resize-none"
+                ></textarea>
+                <button class="w-full bg-blue-600 text-white px-8 py-4 rounded-xl font-semibold hover:bg-blue-700 transition-all">
+                    Invia
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-8 text-center">
+        <div class="container mx-auto px-6">
+            <p>&copy; 2025 | All rights are reserved</p>
+        </div>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
 </html>
