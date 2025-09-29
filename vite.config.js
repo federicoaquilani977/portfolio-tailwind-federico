@@ -3,5 +3,5 @@ import tailwindcss from "@tailwindcss/vite";
 
 export default defineConfig({
   plugins: [tailwindcss()],
-  base: '/portfolio-tailwind-federico-main/',
+  base: '/portfolio-tailwind-federico/',
 });
